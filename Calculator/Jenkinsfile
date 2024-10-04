@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/valtterikonen/Timecalculator.git'
+                branch: 'master', git 'https://github.com/valtterikonen/Timecalculator.git'
             }
         }
         stage('Run Tests') {
